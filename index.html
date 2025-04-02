@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guess the Banana</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="start-screen">
+        <h1>Guess the Banana 🍌</h1>
+        <button id="play-btn">Play</button>
+    </div>
+
+    <div class="auth-screen hidden">
+        <h2>Enter Your Details</h2>
+        <input type="text" id="username" placeholder="Enter Username" required>
+        <input type="email" id="email" placeholder="Enter Email" required>
+        <button id="enter-btn">Enter</button>
+    </div>
+
+    <div class="game-screen hidden">
+        <h2>Level <span id="level">1</span></h2>
+        <img id="banana-img" src="" alt="Banana Puzzle">
+        <p id="question"></p>
+        <input type="number" id="answer" placeholder="Enter answer">
+        <button id="submit-btn">Submit</button>
+        
+        <div class="info">
+            <p>Lives: <span id="lives">3</span></p>
+            <p>Score: <span id="score">0</span></p>
+            <p>Time: <span id="timer">100</span></p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
